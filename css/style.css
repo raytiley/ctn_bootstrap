@@ -52,14 +52,6 @@
       padding: 15px 20px;
     }
 
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar, .navbar-search {
-      margin-top: 10px;
-    }
-
-    .search-query {
-      width:100px;
-    }
 
 
 
@@ -210,6 +202,20 @@
       list-style: none;
     }
 
+#navbar form {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  float: none;
+  display: block;
+  position: relative;
+  top: 10px;
+}
+
+#navbar form input {
+  width:200px;
+}
 
 
     /* RESPONSIVE CSS
