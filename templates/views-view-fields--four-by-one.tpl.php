@@ -33,7 +33,7 @@
  */
 ?>
 <div class="thumbnail">
-	<a  href="<?php print $fields['title']->content; ?>">
+	<a  href="<?php print $fields['path']->content; ?>">
 		<?php print $fields['cablecast_show_thumbnail']->content; ?>
 		<span class="play play-large"></span>
 	</a>
