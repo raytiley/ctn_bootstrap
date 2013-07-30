@@ -1,3 +1,6 @@
 jQuery('document').ready(function() {
-  jQuery('.carousel').carousel();
+  jQuery('#myCarousel').carousel();
+  jQuery('.front-page-carousel').carousel({
+  	interval: false
+  });
 });

@@ -217,6 +217,25 @@
   width:200px;
 }
 
+.thumbnail-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}
+
+.thumbnail-caption {
+  height:100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-control {
+  left: -55px;
+}
+.carousel-control.right {
+  right: -55px;
+}
+
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
