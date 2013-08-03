@@ -236,6 +236,15 @@
   right: -55px;
 }
 
+.service-links ul {
+  list-style: none;
+}
+
+.service-links li {
+  float:left;
+  margin-right: 10px;
+}
+
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
