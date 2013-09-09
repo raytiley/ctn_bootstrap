@@ -166,31 +166,24 @@
 
     /* hover on play */
     a span.play { 
-      display:none; 
+      display:none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background: url('../img/play-hover-small.png') center center no-repeat;
-      position: relative;
       z-index: 100;
     }
 
     a:hover span.play { display:block; }
 
-    .play-medium {
-      margin: -160px 0 0 0;
-      height: 160px; 
-    }
-
-    .play-large {
-      margin: -220px 0 0 0;
-      height: 220px; 
-    }
-
-    .play-small {
-      margin: -110px 0 0 0;
-      height: 110px; 
-    }
-
     .thumbnails li {
       margin-bottom: 16px;
+    }
+
+    .thumbnail-wrapper {
+      position: relative;
     }
 
     /*  Footer */
@@ -230,10 +223,11 @@
 }
 
 .carousel-control {
-  left: -55px;
+  z-index: 1000;
+  left: 0px;
 }
 .carousel-control.right {
-  right: -55px;
+  right: 0px;
 }
 
 .service-links ul {
@@ -242,13 +236,29 @@
 
 .service-links li {
   float:left;
-  margin-right: 10px;
+}
+
+.show-carousel {
+  list-style: none;
+  height:330px;
+  margin: 0;
+}
+
+.show-carousel li {
+  float: left;
+  width:240px;
+  margin:10px;
+  height:330px;
+}
+
+.carousel-wrapper {
+  position: relative;
 }
 
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
-/*
+    /*
     @media (max-width: 979px) {
 
       .container.navbar-wrapper {

@@ -10,18 +10,10 @@
  */
 ?>
 
-<div class="carousel-inner">
-	<?php $chunked_rows = array_chunk($rows, 4); ?>
-	
-		<?php foreach($chunked_rows as $count => $chunk): ?>
-			<div class="item <?php if ($count == 0): print 'active'; endif;?>">
-				<ul class="thumbnails">
-			    	<?php foreach ($chunk as $id => $row): ?>
-				      	<li class="span3">
-				      		<?php print $row; ?>
-				      	</li>
-			    	<?php endforeach; ?>
-		    	</ul>
-			</div>
-		<?php endforeach; ?>
-</div>
+<ul class="show-carousel">
+	<?php foreach($rows as $id => $row): ?>
+	  	<li>
+	  		<?php print $row; ?>
+	  	</li>
+    <?php endforeach; ?>	
+</ul>

@@ -28,7 +28,7 @@
  */
 ?>
 
-<div class="<?php print $classes; ?>">
+<div class="hidden-phone carousel-wrapper <?php print $classes; ?>">
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
     <?php print $title; ?>
@@ -53,11 +53,11 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-    <div class="view-content carousel front-page-carousel slide" data-interval="false" id="<?php print $css_name; ?>">
+    <div class="view-content front-page-carousel" id="<?php print $css_name; ?>">
       <?php print $rows; ?>
-      <a class="carousel-control left" href="#<?php print $css_name; ?>" data-slide="prev">&lsaquo;</a>
-      <a class="carousel-control right" href="#<?php print $css_name; ?>" data-slide="next">&rsaquo;</a>
     </div>
+    <a class="carousel-control left visible-desktop" href="#<?php print $css_name; ?>" data-direction="left">&lsaquo;</a>
+    <a class="carousel-control right visible-desktop" href="#<?php print $css_name; ?>" data-direction="right">&rsaquo;</a>
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>

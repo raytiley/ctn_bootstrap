@@ -33,10 +33,16 @@
  */
 ?>
 <div class="thumbnail">
-	<a  href="<?php print $fields['path']->content; ?>">
-		<?php print $fields['cablecast_show_thumbnail']->content; ?>
-		<span class="play play-large"></span>
-	</a>
+	<div class="thumbnail-wrapper">
+		<a  href="<?php print $fields['path']->content; ?>">
+			<img class="lazy" src="http://placehold.it/360x240"
+			data-original="<?php print $fields['cablecast_show_thumbnail']->content; ?>"
+			width="360" height="240" />
+			<noscript><img src="<?php print $fields['cablecast_show_thumbnail']->content; ?>"
+				width="180" height="120" /></noscript>
+			<span class="play play-large"></span>
+		</a>
+	</div>
 	<h6 class="thumbnail-title"><?php print $fields['title']->content; ?></h6>
 	<p class="thumbnail-caption"><?php print $fields['cablecast_show_comments']->content; ?></p>
 </div>
