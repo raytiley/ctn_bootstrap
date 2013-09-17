@@ -52,6 +52,10 @@
       padding: 15px 20px;
     }
 
+    .navbar-search { 
+      margin-top: 10px;
+    }
+
 
 
 
@@ -195,21 +199,6 @@
       list-style: none;
     }
 
-#navbar form {
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  float: none;
-  display: block;
-  position: relative;
-  top: 10px;
-}
-
-#navbar form input {
-  width:200px;
-}
-
 .thumbnail-title {
   overflow: hidden;
   white-space: nowrap;
@@ -255,6 +244,23 @@
   position: relative;
 }
 
+.search-thumbnail {
+  float: left;
+  margin-right: 10px;
+}
+
+.search-result {
+  padding:2px;
+  margin-bottom: 5px;
+}
+
+.search-description {
+  height:35px;
+}
+
+.block-facetapi .block-title {
+  font-size: 20px;
+}
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */

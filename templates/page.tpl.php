@@ -8,6 +8,10 @@
         <span class="icon-bar"></span>
       </a>
 
+      <form class="navbar-search pull-right" action="/show-search">
+            <input name="query" type="text" class="search-query" placeholder="Search">
+      </form>
+
       <?php if (!empty($logo)): ?>
         <a class="logo pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -26,15 +30,12 @@
               <?php print render($primary_nav); ?>
             <?php endif; ?>
             <?php if (!empty($secondary_nav)): ?>
-              <?php print render($secondary_nav); ?>
+              <?php //print render($secondary_nav); ?>
             <?php endif; ?>
             <?php if (!empty($page['navigation'])): ?>
               <?php print render($page['navigation']); ?>
             <?php endif; ?>
           </nav>
-          <form class="navbar-search" action="/show-search">
-            <input name="query" type="text" class="search-query" placeholder="Show Search">
-          </form>
         </div>
       <?php endif; ?>
     </div>

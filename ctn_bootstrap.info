@@ -16,7 +16,6 @@ regions[footer]         = 'Footer'
 ; Stylesheets
 stylesheets[all][] = css/style.css
 scripts[] = js/ctn.js
-scripts[] = js/jquery.lazyload.js
 scripts[] = js/jquery.carouFredSel-6.2.1.js
 scripts[] = js/jquery.touchSwipe.js
 
@@ -29,9 +28,9 @@ plugins[panels][layouts] = layouts
 ; 
 ; ; Scripts
 ; scripts[] = 'bootstrap/js/bootstrap-affix.js'
-; scripts[] = 'bootstrap/js/bootstrap-alert.js'
+scripts[] = 'bootstrap/js/bootstrap-alert.js'
 ; scripts[] = 'bootstrap/js/bootstrap-button.js'
-; scripts[] = 'bootstrap/js/bootstrap-carousel.js'
+scripts[] = 'bootstrap/js/bootstrap-carousel.js'
 ; scripts[] = 'bootstrap/js/bootstrap-collapse.js'
 ; scripts[] = 'bootstrap/js/bootstrap-dropdown.js'
 ; scripts[] = 'bootstrap/js/bootstrap-modal.js'
