@@ -11,7 +11,7 @@
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
 <?php foreach ($rows as $id => $row): ?>
-	<?php if ($id == 1): ?>
+	<?php if ($id == 0): ?>
     <div class="item active">
   <?php else: ?>
     <div class="item">
