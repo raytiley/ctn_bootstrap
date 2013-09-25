@@ -23,14 +23,11 @@
         </h1>
       <?php endif; ?>
 
-      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+      <?php if (!empty($primary_nav) || !empty($page['navigation'])): ?>
         <div class="nav-collapse collapse">
           <nav role="navigation">
             <?php if (!empty($primary_nav)): ?>
               <?php print render($primary_nav); ?>
-            <?php endif; ?>
-            <?php if (!empty($secondary_nav)): ?>
-              <?php //print render($secondary_nav); ?>
             <?php endif; ?>
             <?php if (!empty($page['navigation'])): ?>
               <?php print render($page['navigation']); ?>
@@ -54,7 +51,7 @@
 
   <div class="row-fluid">
 
-    <?php if (!empty($page['sidebar_first'])): ?>
+    <?php if (!empty($page['sidebar_first']) || !empty($secondary_nav)): ?>
       <aside class="span3" role="complementary">
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->

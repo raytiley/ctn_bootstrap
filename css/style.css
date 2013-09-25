@@ -262,6 +262,19 @@
   font-size: 20px;
 }
 
+.ctn-staff-profile-picture {
+  margin-right: 20px;
+}
+
+.ctn-hours dt {
+  width: 80px;
+
+}
+
+.ctn-hours dd {
+  margin-left: 100px;
+}
+
     /* RESPONSIVE CSS
     -------------------------------------------------- */
     /*

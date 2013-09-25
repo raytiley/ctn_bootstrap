@@ -43,6 +43,6 @@
 			<span class="play play-large"></span>
 		</a>
 	</div>
-	<h6 class="thumbnail-title"><?php print $fields['title']->content; ?></h6>
+	<h6 class="thumbnail-title"><?php print $fields['cablecast_show_cg_title']->content; ?></h6>
 	<p class="thumbnail-caption"><?php print $fields['cablecast_show_comments']->content; ?></p>
 </div>
