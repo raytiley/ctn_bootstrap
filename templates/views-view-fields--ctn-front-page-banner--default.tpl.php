@@ -25,13 +25,14 @@
  */
 ?>
 
-<div class= "banner" style="background-image:url(<?php print $fields['field_ctn_show_banner_image']->content ?>)">
+<div class="banner" style="background-image:url(<?php print $fields['field_ctn_show_banner_image']->content ?>)">
 	<div class="container">
 		<div class="carousel-caption">
-		<h1><?php print $fields['cablecast_show_cg_title']->content; ?></h1>
-		<p class="lead">
-			<?php print $fields['cablecast_show_comments']->content; ?>
-		</p>
-		<a href="<?php print $fields['path']->content; ?>" class="btn btn-large btn-primary">Watch Now</a>
+			<h1><?php print $fields['cablecast_show_cg_title']->content; ?></h1>
+			<p class="lead">
+				<?php print $fields['cablecast_show_comments']->content; ?>
+			</p>
+			<a href="<?php print $fields['path']->content; ?>" class="btn btn-large btn-primary">Watch Now</a>
+		</div>
 	</div>
 </div>
