@@ -28,7 +28,7 @@
  */
 ?>
 
-<div class="hidden-phone carousel-wrapper <?php print $classes; ?>">
+<div class="carousel-wrapper <?php print $classes; ?>">
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
     <?php print $title; ?>
@@ -56,8 +56,6 @@
     <div class="view-content front-page-carousel" id="<?php print $css_name; ?>">
       <?php print $rows; ?>
     </div>
-    <a class="carousel-control left visible-desktop" href="#<?php print $css_name; ?>" data-direction="left">&lsaquo;</a>
-    <a class="carousel-control right visible-desktop" href="#<?php print $css_name; ?>" data-direction="right">&rsaquo;</a>
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>
@@ -73,7 +71,6 @@
       <?php print $attachment_after; ?>
     </div>
   <?php endif; ?>
-
   <?php if ($more): ?>
     <?php print $more; ?>
   <?php endif; ?>

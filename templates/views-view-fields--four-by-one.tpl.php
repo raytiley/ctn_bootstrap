@@ -32,17 +32,13 @@
  *</div>
  */
 ?>
-<div class="thumbnail">
+<li class="thumbnail span3">
 	<div class="thumbnail-wrapper">
 		<a  href="<?php print $fields['path']->content; ?>">
-			<img class="lazy" src="http://placehold.it/360x240"
-			data-original="<?php print $fields['cablecast_show_thumbnail']->content; ?>"
-			width="360" height="240" />
-			<noscript><img src="<?php print $fields['cablecast_show_thumbnail']->content; ?>"
-				width="180" height="120" /></noscript>
+			<img src="<?php print $fields['cablecast_show_thumbnail']->content; ?>" width=320 height=240 />
 			<span class="play play-large"></span>
 		</a>
 	</div>
 	<h6 class="thumbnail-title"><?php print $fields['cablecast_show_cg_title']->content; ?></h6>
 	<p class="thumbnail-caption"><?php print $fields['cablecast_show_comments']->content; ?></p>
-</div>
+</li>

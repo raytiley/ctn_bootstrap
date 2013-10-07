@@ -9,11 +9,10 @@
  * @ingroup views_templates
  */
 ?>
-
-<ul class="show-carousel">
-	<?php foreach($rows as $id => $row): ?>
-	  	<li>
-	  		<?php print $row; ?>
-	  	</li>
-    <?php endforeach; ?>	
-</ul>
+<div class="front-page-section">
+	<ul class="thumbnails">
+		<?php foreach($rows as $id => $row): ?>
+		  		<?php print $row; ?>
+	    <?php endforeach; ?>
+	</ul>
+</div>

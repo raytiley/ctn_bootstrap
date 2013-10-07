@@ -24,13 +24,14 @@
  * @ingroup views_templates
  */
 ?>
-<?php foreach ($fields as $id => $field): ?>
-    <?php if (!empty($field->separator)): ?>
-      <?php print $field->separator; ?>
-    <?php endif; ?>
 
-    <?php print $field->wrapper_prefix; ?>
-      <?php print $field->label_html; ?>
-      <?php print $field->content; ?>
-    <?php print $field->wrapper_suffix; ?>
-<?php endforeach; ?>
+<div class= "banner" style="background-image:url(<?php print $fields['field_ctn_show_banner_image']->content ?>)">
+	<div class="container">
+		<div class="carousel-caption">
+		<h1><?php print $fields['cablecast_show_cg_title']->content; ?></h1>
+		<p class="lead">
+			<?php print $fields['cablecast_show_comments']->content; ?>
+		</p>
+		<a href="<?php print $fields['path']->content; ?>" class="btn btn-large btn-primary">Watch Now</a>
+	</div>
+</div>
