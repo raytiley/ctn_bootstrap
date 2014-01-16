@@ -435,3 +435,8 @@ ul.thumbnails li.span12 + li {
     font-size: 18px;
   }
 }
+
+.container-inline div.control-group{
+  float: left;
+  padding-right: 5px;
+}
